@@ -6,8 +6,10 @@ return [
 
     'allowed_methods' => ['*'],
 
-    'allowed_origins' => ['http://localhost:5173'], // sesuaikan dengan asal frontend kamu
-
+    'allowed_origins' => [
+        'http://localhost:5173',
+        'http://10.5.0.142:5173', // ← tambahkan ini
+    ],
     'allowed_origins_patterns' => [],
 
     'allowed_headers' => ['*'],
