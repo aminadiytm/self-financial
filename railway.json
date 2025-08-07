@@ -1,0 +1,14 @@
+{
+  "build": {
+    "env": {
+      "APP_ENV": "production",
+      "APP_DEBUG": "false"
+    },
+    "command": "composer install --no-dev --optimize-autoloader",
+    "cwd": "backend"
+  },
+  "start": {
+    "command": "php artisan serve --host=0.0.0.0 --port=$PORT",
+    "cwd": "backend"
+  }
+}
